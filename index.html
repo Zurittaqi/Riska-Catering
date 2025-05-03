@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riska Catering - Catering & Sewa Peralatan Prasmanan Pekalongan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fffaf0;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/api/placeholder/800/400");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #8B0000;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #6d0000;
+            transform: scale(1.05);
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #8B0000;
+        }
+        
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .menu-category {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .menu-category h3 {
+            color: #8B0000;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .menu-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .equipment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .equipment-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .equipment-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonials {
+            background-color: #8B0000;
+            color: white;
+        }
+        
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .testimonial {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial .name {
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        .contact {
+            background-color: #f5f5f5;
+        }
+        
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info .address {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info .phone {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">RISKA CATERING</div>
+            <div class="tagline">Kelezatan dalam Setiap Sajian</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Catering & Sewa Peralatan Prasmanan Berkualitas</h1>
+            <p>Membuat acara Anda spesial dengan makanan lezat dan peralatan prasmanan berkualitas</p>
+            <p style="margin-bottom:15px; font-size:1.3rem; color:#ffeb3b;"><strong>MELAYANI PAKET AQIQAH LENGKAP</strong></p>
+            <a href="https://wa.me/6285879848000?text=Halo%20Riska%20Catering,%20saya%20ingin%20memesan%20catering%20untuk%20acara..." class="cta-button">Pesan via WhatsApp</a>
+        </div>
+    </section>
+    
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Favorit Kami</h2>
+            <div class="menu-container">
+                <div class="menu-category">
+                    <h3>Menu Utama</h3>
+                    <div class="menu-item">
+                        <h4>Nasi Tumpeng Komplit</h4>
+                        <p>Nasi kuning dengan lauk pauk komplit untuk acara spesial</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Nasi Kotak</h4>
+                        <p>Tersedia berbagai pilihan menu nasi kotak untuk acara formal maupun informal</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Nasi Kebuli</h4>
+                        <p>Nasi berempah dengan daging kambing yang lezat</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Aneka Ikan & Seafood</h4>
+                        <p>Dari gurame goreng, pepes ikan, sampai udang asam manis</p>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Lauk Pauk</h3>
+                    <div class="menu-item">
+                        <h4>Ayam Bakar</h4>
+                        <p>Ayam bakar dengan bumbu spesial khas Riska Catering</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Rendang Daging</h4>
+                        <p>Daging sapi empuk yang dimasak dengan rempah pilihan</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Tongseng Kambing</h4>
+                        <p>Tongseng dengan daging kambing berkualitas dan rempah terbaik</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Sate Madura</h4>
+                        <p>Sate dengan bumbu kacang khas yang lezat</p>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Sayur & Pelengkap</h3>
+                    <div class="menu-item">
+                        <h4>Sayur Asem</h4>
+                        <p>Sayur asem segar dengan rasa asam yang pas</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Gudangan</h4>
+                        <p>Aneka sayuran rebus dengan bumbu kelapa parut</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Urap-urap</h4>
+                        <p>Sayuran rebus dengan bumbu kelapa pedas</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Sambal Goreng Ati</h4>
+                        <p>Sambal goreng ati ampela dengan petai dan kentang</p>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Paket Aqiqah</h3>
+                    <div class="menu-item">
+                        <h4>Paket Aqiqah Kambing</h4>
+                        <p>Paket lengkap kambing untuk acara aqiqah dengan berbagai pilihan olahan</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Nasi Box Aqiqah</h4>
+                        <p>Nasi box spesial dengan menu pilihan untuk acara aqiqah</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Aneka Olahan Daging Kambing</h4>
+                        <p>Gulai, sate, tongseng, dan gule dari daging kambing berkualitas</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Paket Nasi Berkat</h4>
+                        <p>Nasi dengan lauk dan sayur untuk berkat/syukuran aqiqah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <h2 class="section-title">Sewa Peralatan Prasmanan</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <img src="/api/placeholder/300/200" alt="Meja Prasmanan">
+                    <h3>Meja Prasmanan</h3>
+                    <p>Berbagai ukuran meja prasmanan untuk acara Anda</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="/api/placeholder/300/200" alt="Peralatan Makan">
+                    <h3>Peralatan Makan</h3>
+                    <p>Piring, sendok, garpu, dan pisau berkualitas</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="/api/placeholder/300/200" alt="Chafing Dish">
+                    <h3>Chafing Dish</h3>
+                    <p>Menjaga makanan tetap hangat selama acara</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="/api/placeholder/300/200" alt="Dekorasi">
+                    <h3>Dekorasi Meja</h3>
+                    <p>Mempercantik tampilan prasmanan Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Testimoni Pelanggan</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Makanan Riska Catering sangat lezat dan porsinya pas. Semua tamu di acara pernikahan kami sangat puas. Terima kasih Riska Catering!"</p>
+                    <div class="name">- Keluarga Bapak Hendra</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Peralatan prasmanan yang disediakan sangat lengkap dan bersih. Pelayanannya juga ramah dan profesional. Rekomendasi buat acara kantor!"</p>
+                    <div class="name">- PT Maju Bersama</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-info">
+                <div class="address">
+                    <p><strong>Riska Catering</strong></p>
+                    <p>Pekajangan Gang 15 Nomor 52</p>
+                    <p>RT 11 RW 04, Kedungwuni, Pekalongan</p>
+                </div>
+                <div class="phone">
+                    <p>0858-7984-8000</p>
+                </div>
+                <p>Silahkan hubungi kami untuk reservasi dan informasi harga</p>
+                <a href="tel:085879848000" class="cta-button">Telepon Sekarang</a>
+                <a href="https://wa.me/6285879848000?text=Halo%20Riska%20Catering,%20saya%20ingin%20informasi%20mengenai..." class="cta-button" style="margin-top: 15px; background-color: #25D366;">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Riska Catering. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
