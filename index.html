@@ -30,10 +30,25 @@
             text-align: center;
         }
         
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        
         .logo {
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 10px;
         }
         
         .tagline {
@@ -42,7 +57,7 @@
         }
         
         .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/api/placeholder/800/400");
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://i.imgur.com/IWJk4lB.jpeg");
             background-size: cover;
             background-position: center;
             color: white;
@@ -102,6 +117,16 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .menu-category img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
         }
         
         .menu-category h3 {
@@ -115,6 +140,7 @@
             margin-bottom: 15px;
             padding-bottom: 15px;
             border-bottom: 1px dashed #ddd;
+            text-align: left;
         }
         
         .menu-item:last-child {
@@ -224,13 +250,25 @@
             .section-title {
                 font-size: 1.8rem;
             }
+            
+            .logo-image {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">RISKA CATERING</div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/4GRL4mj.jpeg" alt="Logo Riska Catering"><br>
+                <div class="logo">RISKA CATERING</div>
+            </div>
             <div class="tagline">Kelezatan dalam Setiap Sajian</div>
         </div>
     </header>
@@ -244,121 +282,120 @@
         </div>
     </section>
     
-    <section class="menu" id="menu">
+    
+    
+    <section class="equipment" id="equipment">
         <div class="container">
-            <h2 class="section-title">Menu Favorit Kami</h2>
-            <div class="menu-container">
-                <div class="menu-category">
-                    <h3>Menu Utama</h3>
-                    <div class="menu-item">
-                        <h4>Nasi Tumpeng Komplit</h4>
-                        <p>Nasi kuning dengan lauk pauk komplit untuk acara spesial</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Nasi Kotak</h4>
-                        <p>Tersedia berbagai pilihan menu nasi kotak untuk acara formal maupun informal</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Nasi Kebuli</h4>
-                        <p>Nasi berempah dengan daging kambing yang lezat</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Aneka Ikan & Seafood</h4>
-                        <p>Dari gurame goreng, pepes ikan, sampai udang asam manis</p>
-                    </div>
+            <h2 class="section-title">MENU UTAMA KAMI</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/wwDsj4j.jpeg"/api/placeholder/300/200" alt="Nasi Kotak">
+                    <h3>Nasi Kotak</h3>
+                    <p>Nasi Daging bestik, Acar, Mie Megono, Kentang Telor</p>
                 </div>
-                
-                <div class="menu-category">
-                    <h3>Lauk Pauk</h3>
-                    <div class="menu-item">
-                        <h4>Ayam Bakar</h4>
-                        <p>Ayam bakar dengan bumbu spesial khas Riska Catering</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Rendang Daging</h4>
-                        <p>Daging sapi empuk yang dimasak dengan rempah pilihan</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Tongseng Kambing</h4>
-                        <p>Tongseng dengan daging kambing berkualitas dan rempah terbaik</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Sate Madura</h4>
-                        <p>Sate dengan bumbu kacang khas yang lezat</p>
-                    </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/eYxEkaC.jpeg"/api/placeholder/300/200" alt="Tumpeng Lengkap">
+                    <h3>Nasi Tumpeng Komplit</h3>
+                    <p>Nasi kuning dengan lauk pauk komplit untuk acara spesial</p>
                 </div>
-                
-                <div class="menu-category">
-                    <h3>Sayur & Pelengkap</h3>
-                    <div class="menu-item">
-                        <h4>Sayur Asem</h4>
-                        <p>Sayur asem segar dengan rasa asam yang pas</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Gudangan</h4>
-                        <p>Aneka sayuran rebus dengan bumbu kelapa parut</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Urap-urap</h4>
-                        <p>Sayuran rebus dengan bumbu kelapa pedas</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Sambal Goreng Ati</h4>
-                        <p>Sambal goreng ati ampela dengan petai dan kentang</p>
-                    </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/D4N6Yiq.jpeg"/api/placeholder/300/200" alt="Nasi Berkat">
+                    <h3>Nasi Berkat</h3>
+                    <p>Tersedia berbagai pilihan menu nasi kotak untuk acara formal maupun informal</p>
                 </div>
-                
-                <div class="menu-category">
-                    <h3>Paket Aqiqah</h3>
-                    <div class="menu-item">
-                        <h4>Paket Aqiqah Kambing</h4>
-                        <p>Paket lengkap kambing untuk acara aqiqah dengan berbagai pilihan olahan</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Nasi Box Aqiqah</h4>
-                        <p>Nasi box spesial dengan menu pilihan untuk acara aqiqah</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Aneka Olahan Daging Kambing</h4>
-                        <p>Gulai, sate, tongseng, dan gule dari daging kambing berkualitas</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Paket Nasi Berkat</h4>
-                        <p>Nasi dengan lauk dan sayur untuk berkat/syukuran aqiqah</p>
-                    </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/sMMnMWz.jpeg"/api/placeholder/300/200" alt="Sedepan">
+                    <h3>Sedepan</h3>
+                    <p>Paket Nasi, Ayam Goreng/Bakar, urap, ikan asin, lalap, tempe/tahu, semur telor dan sambal</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <h2 class="section-title">AQIQAH</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/ojifzDT.jpeg"/api/placeholder/300/200" alt="Meja Prasmanan">
+                    <h3>Paket Aqiqah Kambing</h3>
+                    <p>Paket lengkap kambing untuk acara aqiqah dengan berbagai pilihan olahan</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/C8zw2n0.jpeg"/api/placeholder/300/200" alt="Peralatan Makan">
+                    <h3>Nasi Box Aqiqah</h3>
+                    <p>Nasi box spesial dengan menu pilihan untuk acara aqiqah</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/IL0Bczk.jpeg"/api/placeholder/300/200" alt="Aneka Olahan Daging Kambing">
+                    <h3>Aneka Olahan Daging Kambing</h3>
+                    <p>Gulai, sate, tongseng, dan gule dari daging kambing berkualitas</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/F6XM7Dw.jpeg"/api/placeholder/300/200" alt="Dekorasi">
+                    <h3>Paket Ambeng Aqiqah</h3>
+                    <p>Nasi dengan lauk dan sayur untuk berkat/syukuran aqiqah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <h2 class="section-title">MINUMAN</h2>
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/OamajdQ.jpeg"/api/placeholder/300/200" alt="Es Selasih">
+                    <h3>Es Selasih</h3>
+                    <p>Minuman segar dengan biji selasih dan sirup pilihan</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/dcKhr9G.jpeg"/api/placeholder/300/200" alt="Peralatan Makan">
+                    <h3>Softdrink</h3>
+                    <p>Berbagai pilihan minuman ringan disediakan dalam dispenser kaca</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/PXP6AQy.jpeg"/api/placeholder/300/200" alt="Aneka Olahan Daging Kambing">
+                    <h3>Es Kuwut</h3>
+                    <p>Minuman tradisional segar dengan campuran kelapa muda dan buah melon</p>
+                </div>
+                <div class="equipment-item">
+                    <img src="https://i.imgur.com/QLgEOPv.jpeg"/api/placeholder/300/200" alt="Dekorasi">
+                    <h3>Aneka Jus Buah</h3>
+                    <p>Jus buah segar dengan pilihan buah-buahan lokal</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section class="equipment" id="equipment">
         <div class="container">
             <h2 class="section-title">Sewa Peralatan Prasmanan</h2>
             <div class="equipment-grid">
                 <div class="equipment-item">
-                    <img src="/api/placeholder/300/200" alt="Meja Prasmanan">
+                    <img src="https://i.imgur.com/IWJk4lB.jpeg"/api/placeholder/300/200" alt="Meja Prasmanan">
                     <h3>Meja Prasmanan</h3>
                     <p>Berbagai ukuran meja prasmanan untuk acara Anda</p>
                 </div>
                 <div class="equipment-item">
-                    <img src="/api/placeholder/300/200" alt="Peralatan Makan">
+                    <img src="https://i.imgur.com/rMlLUwl.jpeg"/api/placeholder/300/200" alt="Peralatan Makan">
                     <h3>Peralatan Makan</h3>
                     <p>Piring, sendok, garpu, dan pisau berkualitas</p>
                 </div>
                 <div class="equipment-item">
-                    <img src="/api/placeholder/300/200" alt="Chafing Dish">
+                    <img src="https://i.imgur.com/6mpYIcm.jpeg"/api/placeholder/300/200" alt="Chafing Dish">
                     <h3>Chafing Dish</h3>
                     <p>Menjaga makanan tetap hangat selama acara</p>
                 </div>
                 <div class="equipment-item">
-                    <img src="/api/placeholder/300/200" alt="Dekorasi">
+                    <img src="https://i.imgur.com/rTUQCQ6.jpeg"/api/placeholder/300/200" alt="Dekorasi">
                     <h3>Dekorasi Meja</h3>
                     <p>Mempercantik tampilan prasmanan Anda</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title" style="color: white;">Testimoni Pelanggan</h2>
