@@ -41,17 +41,14 @@
         
         .logo-image {
             width: auto;
-            height: 100px;
-            max-width: 250px;
+            height: 150px;
             margin-right: 15px;
             object-fit: contain;
+            border: 0.1px solid white;
             /* Logo animation */
             animation: dropLogo 1.5s ease-out forwards;
             position: relative;
             top: -100px; /* Start position off-screen */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            padding: 5px;
-            background-color: rgba(255,255,255,0.9);
         }
         
         @keyframes dropLogo {
@@ -134,7 +131,16 @@
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 100px 20px;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .hero2 {
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.0)), url("https://i.imgur.com/wOkEhTF.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px 20px;
             text-align: center;
         }
         
@@ -261,31 +267,21 @@
             object-fit: cover;
             border-radius: 5px;
             margin-bottom: 15px;
-            transform: translateX(100%); /* Start off-screen */
+            transform: translateY(-100%); /* Start position off-screen from top */
             opacity: 0;
         }
         
         .equipment-item.animated img {
-            animation: slideInShake 0.6s forwards 0.3s;
+            animation: smoothDropImage 0.8s ease-out forwards 0.2s;
         }
         
-        @keyframes slideInShake {
+        @keyframes smoothDropImage {
             0% {
-                transform: translateX(100%);
+                transform: translateY(-100%);
                 opacity: 0;
             }
-            70% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            80% {
-                transform: translateX(-10px);
-            }
-            90% {
-                transform: translateX(10px);
-            }
             100% {
-                transform: translateX(0);
+                transform: translateY(0);
                 opacity: 1;
             }
         }
@@ -415,13 +411,16 @@
             </div>
         </div>
     </nav>
-    
-    <section class="hero" id="hero">
+   <section class="hero2" id="hero2">
+        <div class="container">
+	    <a href="https://wa.me/6285878861797?text=Halo%20Riska%20Catering,%20saya%20ingin%20tanya%20harga%20untuk%20menu..." class="cta-button">Tanya harga via WA</a>
+        </div>
+    </section>
+   <section class="hero" id="hero">
         <div class="container">
             <h1>Catering & Sewa Alat Prasmanan</h1>
             <p><h2>Acara anda menjadi lebih spesial dengan hidangan lezat dan peralatan prasmanan berkualitas<h2></p>
             <p style="margin-bottom:15px; font-size:1.7rem; color:#ffeb3b;"><strong>MELAYANI PAKET AQIQAH LENGKAP</strong></p>
-            <a href="https://wa.me/6285878861797?text=Halo%20Riska%20Catering,%20saya%20ingin%20memesan%20catering%20untuk%20acara..." class="cta-button">0858-7886-1797</a>
         </div>
     </section>
     
